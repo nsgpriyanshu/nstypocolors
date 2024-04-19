@@ -1,6 +1,4 @@
 # nstypocolors
-A typescript color package specially for typescript developers.
-
 
 <img src="./assets/nstypocoloricon.png" alt="My Colors Icon" width="250" height="250" />
 
@@ -88,4 +86,3 @@ You can join our discord server for support [Discord Server](https://discord.com
 ## Thank You
 
 I hope this package will help you, happy coding.
-

@@ -1,0 +1,10 @@
+#Ignoring Files
+src/
+tests/
+node_modules/
+*.log
+*.map
+.eslintrc.json
+.gitignore
+jest.config.js
+prettierrc
