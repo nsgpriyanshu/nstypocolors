@@ -6,6 +6,20 @@ All notable changes to this project will be documented in this file.
 
 - Initial release of the package.
 
+## [1.2.9] - 2024-04-20
+
+### Added
+
+- None
+
+### Changed
+
+- None
+
+### Fixed
+
+- Bugs and colors.ts
+
 ## [1.2.8] - 2024-04-20
 
 ### Added
