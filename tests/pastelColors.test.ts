@@ -17,6 +17,15 @@ describe("nstypocolors logging functions", () => {
     consoleSpy.mockRestore();
   });
 
+    // Test for pastel red
+  test("logPastelRed should print a message in pastel red", () => {
+    const message = "Hello, pastel red world!";
+    nstypocolors.logPastelRed(message);
+    expect(consoleSpy).toHaveBeenCalledWith(
+      `${COLORS.pastelRed}${message}${COLORS.reset}`,
+    );
+  });
+  
   // Test for pastel pink
   test("logPastelPink should print a message in pastel pink", () => {
     const message = "Hello, pastel pink world!";
