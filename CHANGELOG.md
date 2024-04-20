@@ -6,6 +6,35 @@ All notable changes to this project will be documented in this file.
 
 - Initial release of the package.
 
+## [1.2.11] - 2024-04-20
+
+### Added
+
+- None
+
+### Changed
+
+- None
+
+### Fixed
+
+- Bugs and colors.ts with index.ts with brightGreen color code
+
+## [1.2.10] - 2024-04-20
+
+### Added
+
+- None
+
+### Changed
+
+- None
+
+### Fixed
+
+- Bugs and colors.ts with index.ts
+
+
 ## [1.2.9] - 2024-04-20
 
 ### Added
