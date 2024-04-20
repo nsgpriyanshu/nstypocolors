@@ -35,6 +35,15 @@ describe("nstypocolors logging functions", () => {
     );
   });
 
+   // Test for pink
+  test("logPink should print a message in pink", () => {
+    const message = "Hello, pink world!";
+    nstypocolors.logPink(message);
+    expect(consoleSpy).toHaveBeenCalledWith(
+      `${COLORS.pink}${message}${COLORS.reset}`,
+    );
+  });
+  
   // Test for yellow
   test("logYellow should print a message in yellow", () => {
     const message = "Hello, yellow world!";
@@ -77,6 +86,15 @@ describe("nstypocolors logging functions", () => {
     nstypocolors.logWhite(message);
     expect(consoleSpy).toHaveBeenCalledWith(
       `${COLORS.white}${message}${COLORS.reset}`,
+    );
+  });
+
+    // Test for black
+  test("logblack should print a message in black", () => {
+    const message = "Hello, black world!";
+    nstypocolors.logBlack(message);
+    expect(consoleSpy).toHaveBeenCalledWith(
+      `${COLORS.black}${message}${COLORS.reset}`,
     );
   });
 
