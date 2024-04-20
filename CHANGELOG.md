@@ -6,6 +6,31 @@ All notable changes to this project will be documented in this file.
 
 - Initial release of the package.
 
+## [1.2.8] - 2024-04-20
+
+### Added
+
+#### Primary Colors:
+
+- `logPink(message: string): void`: Logs a message in pink.
+- `logBlack(message: string): void`: Logs a message in black.
+
+#### Bright Colors:
+
+- `logBrightPink(message: string): void`: Logs a message in bright pink.
+
+#### Pastel Colors:
+
+- `logPastelRed(message: string): void`: Logs a message in pastel red.
+
+### Changed
+
+- None
+
+### Fixed
+
+- Bugs and README.md updates.
+
 ## [1.2.6] - 2024-04-19
 
 ### Added
