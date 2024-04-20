@@ -4,11 +4,13 @@ export const COLOR_CODES = {
   reset: "\x1b[0m",
   red: "\x1b[31m",
   green: "\x1b[32m",
+  pink: "\x1b[38;5;213m",
   yellow: "\x1b[33m",
   blue: "\x1b[34m",
   magenta: "\x1b[35m",
   cyan: "\x1b[36m",
   white: "\x1b[37m",
+  black: "\x1b[38;5;232m",
   // Bright Colors
   brightRed: "\x1b[91m",
   brightGreen: "\x1b[92m",
@@ -18,6 +20,7 @@ export const COLOR_CODES = {
   brightCyan: "\x1b[96m",
   brightWhite: "\x1b[97m",
   //Pastel and Aesthetic Colors
+  pastelRed: "\x1b[38;5;1",
   pastelPink: "\x1b[38;5;205m",
   pastelBlue: "\x1b[38;5;111m",
   pastelGreen: "\x1b[38;5;157m",
