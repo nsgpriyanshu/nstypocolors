@@ -31,7 +31,7 @@ import {
   logPink,
   logYellow,
   logBlue,
-  logMaganeta,
+  logMagenta,
   logCyan,
   logWhite,
   logBlack,
