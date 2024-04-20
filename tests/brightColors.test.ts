@@ -35,6 +35,15 @@ describe("nstypocolors logging functions", () => {
     );
   });
 
+     // Test for bright pink
+   test("logBrightPink should print a message in bright pink", () => {
+    const message = "Hello, bright pink world!";
+    nstypocolors.logBrightPink(message);
+    expect(consoleSpy).toHaveBeenCalledWith(
+      `${COLORS.brightPink}${message}${COLORS.reset}`,
+    );
+  });
+
   // Test for bright yellow
   test("logBrightYellow should print a message in bright yellow", () => {
     const message = "Hello, bright yellow world!";
