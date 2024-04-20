@@ -132,7 +132,6 @@ export function logPastelMint(message: string): void {
 }
 
 // Add a success message log statement at the end of the file
-// console.log("nstypocolors has started successfully!");
 if (require.main === module) {
   console.log("nstypocolors has started successfully!");
 }
