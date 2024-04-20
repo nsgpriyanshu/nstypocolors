@@ -13,14 +13,14 @@ export const COLOR_CODES = {
   black: "\x1b[38;5;232m",
   // Bright Colors
   brightRed: "\x1b[91m",
-  brightGreen: "\x1b[92m",
+  brightGreen: "\x1b[38:5:40m",
   brightYellow: "\x1b[93m",
   brightBlue: "\x1b[94m",
   brightMagenta: "\x1b[95m",
   brightCyan: "\x1b[96m",
   brightWhite: "\x1b[97m",
   //Pastel and Aesthetic Colors
-  pastelRed: "\x1b[38;5;1",
+  pastelRed: "\x1b[38;5;1m",
   pastelPink: "\x1b[38;5;205m",
   pastelBlue: "\x1b[38;5;111m",
   pastelGreen: "\x1b[38;5;157m",
