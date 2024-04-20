@@ -2,8 +2,8 @@
 
 <img src="./assets/nstypocoloricon.png" alt="My Colors Icon" width="250" height="250" />
 
-![Version](https://img.shields.io/badge/version-1.2.6-blue)
-![Downloads](https://img.shields.io/npm/dt/<package-name>?style=flat)
+![Version](https://img.shields.io/badge/version-1.2.8-blue)
+![Downloads](https://img.shields.io/npm/dt/nstypocolors?style=flat)
 
 `nstypocolors` is a TypeScript package that provides colorful console logs for TypeScript developers. It allows you to log messages with different colors in the console, making it easier to debug and understand your logs.
 
@@ -22,22 +22,46 @@ npm install nstypocolors
 
 ## Usage
 
-First, import the module in your TypeScript project:
+To start using nstypocolors, import the desired functions into your TypeScript project
 
 ```ts
-import * as nstypocolors from "nstypocolors";
+import {
+  logRed,
+  logGreen,
+  logPink,
+  logYellow,
+  logBlue,
+  logMaganeta,
+  logCyan,
+  logWhite,
+  logBlack,
+} from "nstypocolors";
 ```
 
 Now you can use the provided functions to log colorful messages:
 
 ```ts
-nstypocolors.logRed("This is a red message");
-nstypocolors.logGreen("This is a green message");
-nstypocolors.logYellow("This is a yellow message");
-nstypocolors.logBlue("This is a blue message");
-nstypocolors.logMagenta("This is a magenta message");
-nstypocolors.logCyan("This is a cyan message");
-nstypocolors.logWhite("This is a white message");
+logRed("This is a red message");
+logGreen("This is a green message");
+logPink("This is a pink message");
+logYellow("This is a yellow message");
+logBlue("This is a blue message");
+logMagenta("This is a magenta message");
+logCyan("This is a cyan message");
+logWhite("This is a white message");
+logBlack("This is a black message");
+```
+
+Similarly, you can use bright and pastel colors
+
+```ts
+import { logBrightRed, logPastelGreen } from "nstypocolors";
+
+// Log message in bright colors
+logBrightRed("This is a bright red message!");
+
+// Log message in pastel colors
+logPastelGreen("This is a pastel green message!");
 ```
 
 ## Our Colors
@@ -46,11 +70,13 @@ The `nstypocolors` package provides a variety of colors that you can use for col
 
 - **Red**: Logs a message in red.
 - **Green**: Logs a message in green.
+- **Pink**: Logs a message in pink.
 - **Yellow**: Logs a message in yellow.
 - **Blue**: Logs a message in blue.
 - **Magenta**: Logs a message in magenta.
 - **Cyan**: Logs a message in cyan.
 - **White**: Logs a message in white.
+- **Black**: Logs a message in black.
 
 In addition to the standard colors, the package also provides bright and pastel colors:
 
@@ -67,6 +93,7 @@ In addition to the standard colors, the package also provides bright and pastel 
 - **Pastel Colors**:
   - **Pastel Red**: Logs a message in pastel red.
   - **Pastel Green**: Logs a message in pastel green.
+  - **Bright Pink**: Logs a message in bright pink.
   - **Pastel Yellow**: Logs a message in pastel yellow.
   - **Pastel Blue**: Logs a message in pastel blue.
   - **Pastel Magenta**: Logs a message in pastel magenta.
