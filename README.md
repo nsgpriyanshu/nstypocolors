@@ -2,7 +2,7 @@
 
 <img src="./assets/nstypocoloricon.png" alt="My Colors Icon" width="250" height="250" />
 
-![Version](https://img.shields.io/badge/version-1.2.11-blue)
+[![npm version](https://img.shields.io/npm/v/nstypocolors)](https://www.npmjs.com/package/nstypocolors)
 ![Downloads](https://img.shields.io/npm/dt/nstypocolors?style=flat)
 
 `nstypocolors` is a TypeScript package that provides colorful console logs for TypeScript developers. It allows you to log messages with different colors in the console, making it easier to debug and understand your logs.
