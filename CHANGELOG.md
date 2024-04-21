@@ -6,6 +6,20 @@ All notable changes to this project will be documented in this file.
 
 - Initial release of the package.
 
+## [1.2.12] - 2024-04-21
+
+### Added
+
+- A successfully colour log function to inspect the colours that has been uploaded
+
+### Changed
+
+- None
+
+### Fixed
+
+- Bugs and README.md file and black color code in color.ts and index.ts
+
 ## [1.2.11] - 2024-04-20
 
 ### Added
