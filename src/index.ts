@@ -3,7 +3,7 @@ import { applyColor } from "./utils/color";
 
 // Define different color codes
 export const COLORS = {
-  // Primary Colors
+ // Primary Colors
   reset: "\x1b[0m",
   red: "\x1b[31m",
   green: "\x1b[32m",
@@ -13,11 +13,11 @@ export const COLORS = {
   magenta: "\x1b[35m",
   cyan: "\x1b[36m",
   white: "\x1b[37m",
-  black: "\x1b[38:5:232m",
+  black: "\x1b[38;5;232m",
   // Bright Colors
   brightRed: "\x1b[91m",
-  brightGreen: "\x1b[38:5:40m",
-  brightPink: "\x1b[38;5;219",
+  brightGreen: "\x1b[38;5;40m",
+  brightPink: "\x1b[38;5;219m",
   brightYellow: "\x1b[93m",
   brightBlue: "\x1b[94m",
   brightMagenta: "\x1b[95m",
@@ -135,3 +135,74 @@ export function logPastelMint(message: string): void {
 if (require.main === module) {
   console.log("nstypocolors has started successfully!");
 }
+
+// Add a log function for available colours for inspection
+
+import { COLOR_CODES } from "./utils/color";
+
+// Primary Colors
+console.log(applyColor("Successfully loaded Reset", COLOR_CODES.reset));
+console.log(applyColor("Successfully loaded Red", COLOR_CODES.red));
+console.log(applyColor("Successfully loaded Green", COLOR_CODES.green));
+console.log(applyColor("Successfully loaded Pink", COLOR_CODES.pink));
+console.log(applyColor("Successfully loaded Yellow", COLOR_CODES.yellow));
+console.log(applyColor("Successfully loaded Blue", COLOR_CODES.blue));
+console.log(applyColor("Successfully loaded Magenta", COLOR_CODES.magenta));
+console.log(applyColor("Successfully loaded Cyan", COLOR_CODES.cyan));
+console.log(applyColor("Successfully loaded White", COLOR_CODES.white));
+console.log(applyColor("Successfully loaded Black", COLOR_CODES.black));
+
+// Bright Colors
+console.log(
+  applyColor("Successfully loaded Bright Red", COLOR_CODES.brightRed),
+);
+console.log(
+  applyColor("Successfully loaded Bright Green", COLOR_CODES.brightGreen),
+);
+console.log(
+  applyColor("Successfully loaded Bright Pink", COLOR_CODES.brightPink),
+);
+console.log(
+  applyColor("Successfully loaded Bright Yellow", COLOR_CODES.brightYellow),
+);
+console.log(
+  applyColor("Successfully loaded Bright Blue", COLOR_CODES.brightBlue),
+);
+console.log(
+  applyColor("Successfully loaded Bright Magenta", COLOR_CODES.brightMagenta),
+);
+console.log(
+  applyColor("Successfully loaded Bright Cyan", COLOR_CODES.brightCyan),
+);
+console.log(
+  applyColor("Successfully loaded Bright White", COLOR_CODES.brightWhite),
+);
+
+// Pastel and Aesthetic Colors
+console.log(
+  applyColor("Successfully loaded Pastel Red", COLOR_CODES.pastelRed),
+);
+console.log(
+  applyColor("Successfully loaded Pastel Pink", COLOR_CODES.pastelPink),
+);
+console.log(
+  applyColor("Successfully loaded Pastel Blue", COLOR_CODES.pastelBlue),
+);
+console.log(
+  applyColor("Successfully loaded Pastel Green", COLOR_CODES.pastelGreen),
+);
+console.log(
+  applyColor("Successfully loaded Pastel Yellow", COLOR_CODES.pastelYellow),
+);
+console.log(
+  applyColor("Successfully loaded Pastel Orange", COLOR_CODES.pastelOrange),
+);
+console.log(
+  applyColor("Successfully loaded Pastel Lavender", COLOR_CODES.pastelLavender),
+);
+console.log(
+  applyColor("Successfully loaded Pastel Coral", COLOR_CODES.pastelCoral),
+);
+console.log(
+  applyColor("Successfully loaded Pastel Mint", COLOR_CODES.pastelMint),
+);
