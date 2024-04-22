@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 
 - Initial release of the package.
+  
+### Added
+
+- Keywords in package.json file
+
+### Changed
+
+- None
+
+### Fixed
+
+- None
 
 ## [1.2.12] - 2024-04-21
 
