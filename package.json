@@ -1,6 +1,6 @@
 {
   "name": "nstypocolors",
-  "version": "1.2.12",
+  "version": "1.2.13",
   "description": "A typescript color package specially for typescript developers.",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
@@ -19,7 +19,9 @@
   "keywords": [
     "nstypocolors",
     "nstc",
-    "color"
+    "typescript colors",
+    "typocolors",
+    "colors"
   ],
   "author": "nsgpriyanshu",
   "license": "MIT",
