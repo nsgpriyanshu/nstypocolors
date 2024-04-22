@@ -5,6 +5,8 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 
 - Initial release of the package.
+
+## [1.2.13] - 2024-04-22
   
 ### Added
 
