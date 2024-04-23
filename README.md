@@ -4,6 +4,7 @@
 
 [![npm version](https://img.shields.io/npm/v/nstypocolors)](https://www.npmjs.com/package/nstypocolors)
 ![Downloads](https://img.shields.io/npm/dt/nstypocolors?style=flat)
+![Last Commit](https://img.shields.io/github/last-commit/nsgpriyanshu/nstypocolors)
 
 `nstypocolors` is a TypeScript package that provides colorful console logs for TypeScript developers. It allows you to log messages with different colors in the console, making it easier to debug and understand your logs.
 
@@ -63,6 +64,9 @@ logBrightRed("This is a bright red message!");
 // Log message in pastel colors
 logPastelGreen("This is a pastel green message!");
 ```
+
+> [!TIP]
+> Consider importing only the necessary colors to streamline your code and reduce unnecessary clutter. By importing only the colors you need, you can enhance readability and maintainability, ensuring that your code remains clean and efficient.
 
 ## Our Colors
 
