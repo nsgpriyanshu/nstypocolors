@@ -6,6 +6,21 @@ All notable changes to this project will be documented in this file.
 
 - Initial release of the package.
 
+## [1.2.14] - 2024-04-23
+
+### Added
+
+- A tip message in README.md file
+- Added a commit badge
+
+### Changed
+
+- Removed the inspection log from index.ts to reduce unwanted logs in global level
+
+### Fixed
+
+- Minor bugs
+
 ## [1.2.13] - 2024-04-22
   
 ### Added
