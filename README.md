@@ -2,7 +2,7 @@
 
 <img src="./assets/nstypocoloricon.png" alt="My Colors Icon" width="250" height="250" />
 
-[![npm version](https://img.shields.io/npm/v/nstypocolors)](https://www.npmjs.com/package/nstypocolors)
+[![npm version](https://img.shields.io/npm/v/nstypocolors?color=crimson)](https://www.npmjs.com/package/nstypocolors)
 ![Downloads](https://img.shields.io/npm/dt/nstypocolors?style=flat)
 ![Last Commit](https://img.shields.io/github/last-commit/nsgpriyanshu/nstypocolors)
 
