@@ -1,3 +1,5 @@
+https://raw.githubusercontent.com/nsgpriyanshu/creatorsworld/main/public/icons/colourfull-pfp.jpg
+
 # nstypocolors
 
 <img src="./assets/nstypocoloricon.png" alt="My Colors Icon" width="250" height="250" />
