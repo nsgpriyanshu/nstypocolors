@@ -1,4 +1,4 @@
-https://raw.githubusercontent.com/nsgpriyanshu/creatorsworld/main/public/icons/colourfull-pfp.jpg
+![Ps](https://img.shields.io/badge/Shsb-gray?style=flat&logo=https://raw.githubusercontent.com/nsgpriyanshu/creatorsworld/main/public/icons/colourfull-pfp.jpg)
 
 # nstypocolors
 
