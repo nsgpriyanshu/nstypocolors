@@ -6,6 +6,38 @@ All notable changes to this project will be documented in this file.
 
 - Initial release of the package.
 
+## [1.3.0] - 2024-07-20
+
+### Added
+
+- New background colors
+- Tests for new colors
+
+### Changed
+
+- Index.ts and Colors.ts
+
+### Bug Fixes
+
+- Some previous minor bugs
+
+## [1.3.0-rc1] - 2024-07-19
+
+### Added
+
+- Github folder and all the necessay workflows
+- SECURITY.md
+
+### Changed
+
+- Initial config setup: Updated to the new modern setup based on Angular commit convention
+- Enhanced the prettier ans eslint setup
+- Enhanced security
+
+### Bug Fixes
+
+- None
+
 ## [1.2.14] - 2024-04-23
 
 ### Added
@@ -22,10 +54,10 @@ All notable changes to this project will be documented in this file.
 - Minor bugs
 
 ## [1.2.13] - 2024-04-22
-  
+
 ### Added
 
-- Keywords in package.json file
+- Keyword in package.json file
 
 ### Changed
 
@@ -76,7 +108,6 @@ All notable changes to this project will be documented in this file.
 ### Fixed
 
 - Bugs and colors.ts with index.ts
-
 
 ## [1.2.9] - 2024-04-20
 
