@@ -9,6 +9,8 @@
 [![Discord](https://img.shields.io/discord/855781247480496130.svg?color=5865F2&logo=discord&logoColor=white)](https://discord.gg/7SAcEv7MDd)
 [![GitHub contributors](https://img.shields.io/github/contributors/nsgpriyanshu/creatorsworld.svg?color=af52de)](https://github.com/nsgpriyanshu/creatorsworld/graphs/contributors)
 [![semantic-release: angular](https://img.shields.io/badge/semantic--release-angular-e10079?logo=semantic-release)](https://github.com/nsgpriyanshu/nstypocolors)
+[![CodeQL](https://github.com/nsgpriyanshu/nstypocolors/actions/workflows/codeql.yml/badge.svg)](https://github.com/nsgpriyanshu/nstypocolors/actions/workflows/codeql.yml)
+[![Dependency Review](https://github.com/nsgpriyanshu/nstypocolors/actions/workflows/dependency-review.yml/badge.svg)](https://github.com/nsgpriyanshu/nstypocolors/actions/workflows/dependency-review.yml)
 ![Last Commit](https://img.shields.io/github/last-commit/nsgpriyanshu/nstypocolors)
 
 </div>
