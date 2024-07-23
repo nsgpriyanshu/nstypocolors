@@ -6,6 +6,20 @@ All notable changes to this project will be documented in this file.
 
 - Initial release of the package.
 
+## [1.3.1] - 2024-07-23
+
+### Added
+
+- None
+
+### Changed
+
+- None
+
+### Bug Fixes
+
+- The types bug
+
 ## [1.3.0] - 2024-07-20
 
 ### Added
