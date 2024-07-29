@@ -1,41 +1,23 @@
-name: Auto Merge Dependabot PRs
+name: Dependabot auto-merge
+on: pull_request
 
-on:
-  pull_request:
-    types:
-      - opened
-      - synchronize
-      - reopened
+permissions:
+  contents: write
+  pull-requests: write
 
 jobs:
-  auto-merge:
+  dependabot:
     runs-on: ubuntu-latest
     if: github.actor == 'dependabot[bot]'
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - name: Dependabot metadata
+        id: metadata
+        uses: dependabot/fetch-metadata@v2
         with:
-          node-version: '20'
-
-      - name: Setup Git
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Run ESLint
-        run: npm run lint
-
-      - name: Merge Dependabot PR
-        if: success()
-        run: |
-          git checkout ${{ github.event.pull_request.head.ref }}
-          git merge ${{ github.event.pull_request.base.ref }} --no-ff
-          git push origin ${{ github.event.pull_request.head.ref }}
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
+      - name: Enable auto-merge for Dependabot PRs
+        if: contains(steps.metadata.outputs.dependency-names, 'my-dependency') && steps.metadata.outputs.update-type == 'version-update:semver-patch'
+        run: gh pr merge --auto --merge "$PR_URL"
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_URL: ${{github.event.pull_request.html_url}}
+          GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
