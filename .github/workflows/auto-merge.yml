@@ -1,23 +1,38 @@
-name: Dependabot auto-merge
-on: pull_request
+name: Auto-Merge Dependabot Updates
 
-permissions:
-  contents: write
-  pull-requests: write
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
 
 jobs:
-  dependabot:
-    runs-on: ubuntu-latest
+  auto-merge:
     if: github.actor == 'dependabot[bot]'
+    runs-on: ubuntu-latest
     steps:
-      - name: Dependabot metadata
-        id: metadata
-        uses: dependabot/fetch-metadata@v2
-        with:
-          github-token: "${{ secrets.GITHUB_TOKEN }}"
-      - name: Enable auto-merge for Dependabot PRs
-        if: contains(steps.metadata.outputs.dependency-names, 'my-dependency') && steps.metadata.outputs.update-type == 'version-update:semver-patch'
-        run: gh pr merge --auto --merge "$PR_URL"
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Ensure PR is from Dependabot
+        if: github.actor == 'dependabot[bot]'
+        run: echo "Dependabot PR detected, continuing."
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run prettier 
+        run: npm run format:fix
+
+      - name: Auto-merge Dependabot updates
+        uses: pascalgn/automerge-action@v0.14.3
         env:
-          PR_URL: ${{github.event.pull_request.html_url}}
-          GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          merge-method: squash
+          branch: main
+          skip-ci: true
+          commit_message: |
+            {prefix}: {dep} ({version})
+            This PR was automatically merged by GitHub Actions.
