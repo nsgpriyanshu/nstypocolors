@@ -20,10 +20,7 @@ jobs:
         run: echo "Dependabot PR detected, continuing."
 
       - name: Install dependencies
-        run: npm install
-
-      - name: Run prettier 
-        run: npm run format:fix
+        run: npm install --legacy-peer-deps
 
       - name: Auto-merge Dependabot updates
         uses: pascalgn/automerge-action@v0.14.3
