@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+# [1.4.0](https://github.com/nsgpriyanshu/nstypocolors/compare/v1.3.1...1.4.0) - (2024-12-08)
+
+## Continuous Integration
+
+- **update:** Remove run test ([7458ff2](https://github.com/nsgpriyanshu/nstypocolors/commit/7458ff294d6ff7958d3edf6d3fd260d08d433e11))
+- **test:** Testing a new feature ([764b481](https://github.com/nsgpriyanshu/nstypocolors/commit/764b481641f3801774fc5944ff3366e148e21d7b))
+- Update the Dependabot auto-merge action ([657c4bb](https://github.com/nsgpriyanshu/nstypocolors/commit/657c4bb7f0dd66a85638ef887a0a9929c69ffa28))
+
+## Features
+
+- Init remote repo, add cliff jumper, update deps ([9fa0b8a](https://github.com/nsgpriyanshu/nstypocolors/commit/9fa0b8a7f8c247e6cd6699ab60d6b12f22638746))
+
 ## [Unreleased]
 
 - Initial release of the package.
