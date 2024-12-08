@@ -3,7 +3,7 @@ updates:
   - package-ecosystem: 'npm'
     directory: '/'
     schedule:
-      interval: 'monthly'
+      interval: 'weekly'
     labels:
       - 'dependencies'
     commit-message:
@@ -11,9 +11,11 @@ updates:
   - package-ecosystem: 'github-actions'
     directory: '/'
     schedule:
-      interval: 'monthly'
+      interval: 'weekly'
     labels:
       - 'dependencies'
       - 'actions'
     commit-message:
       prefix: 'deps'
+    ignore:
+      - dependency-type: 'patch'
