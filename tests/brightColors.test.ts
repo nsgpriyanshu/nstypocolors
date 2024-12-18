@@ -1,6 +1,6 @@
 // Importing the necessary functions and constants
 import * as nstypocolors from '../src/index'
-import { COLORS } from '../src/index'
+import { COLOR_CODES } from '../src/utils/color'
 
 describe('nstypocolors logging functions', () => {
   let consoleSpy: jest.SpyInstance
@@ -19,56 +19,72 @@ describe('nstypocolors logging functions', () => {
   test('logBrightRed should print a message in bright red', () => {
     const message = 'Hello, bright red world!'
     nstypocolors.logBrightRed(message)
-    expect(consoleSpy).toHaveBeenCalledWith(`${COLORS.brightRed}${message}${COLORS.reset}`)
+    expect(consoleSpy).toHaveBeenCalledWith(
+      `${COLOR_CODES.brightRed}${message}${COLOR_CODES.reset}`,
+    )
   })
 
   // Test for bright green
   test('logBrightGreen should print a message in bright green', () => {
     const message = 'Hello, bright green world!'
     nstypocolors.logBrightGreen(message)
-    expect(consoleSpy).toHaveBeenCalledWith(`${COLORS.brightGreen}${message}${COLORS.reset}`)
+    expect(consoleSpy).toHaveBeenCalledWith(
+      `${COLOR_CODES.brightGreen}${message}${COLOR_CODES.reset}`,
+    )
   })
 
   // Test for bright pink
   test('logBrightPink should print a message in bright pink', () => {
     const message = 'Hello, bright pink world!'
     nstypocolors.logBrightPink(message)
-    expect(consoleSpy).toHaveBeenCalledWith(`${COLORS.brightPink}${message}${COLORS.reset}`)
+    expect(consoleSpy).toHaveBeenCalledWith(
+      `${COLOR_CODES.brightPink}${message}${COLOR_CODES.reset}`,
+    )
   })
 
   // Test for bright yellow
   test('logBrightYellow should print a message in bright yellow', () => {
     const message = 'Hello, bright yellow world!'
     nstypocolors.logBrightYellow(message)
-    expect(consoleSpy).toHaveBeenCalledWith(`${COLORS.brightYellow}${message}${COLORS.reset}`)
+    expect(consoleSpy).toHaveBeenCalledWith(
+      `${COLOR_CODES.brightYellow}${message}${COLOR_CODES.reset}`,
+    )
   })
 
   // Test for bright blue
   test('logBrightBlue should print a message in bright blue', () => {
     const message = 'Hello, bright blue world!'
     nstypocolors.logBrightBlue(message)
-    expect(consoleSpy).toHaveBeenCalledWith(`${COLORS.brightBlue}${message}${COLORS.reset}`)
+    expect(consoleSpy).toHaveBeenCalledWith(
+      `${COLOR_CODES.brightBlue}${message}${COLOR_CODES.reset}`,
+    )
   })
 
   // Test for bright magenta
   test('logBrightMagenta should print a message in bright magenta', () => {
     const message = 'Hello, bright magenta world!'
     nstypocolors.logBrightMagenta(message)
-    expect(consoleSpy).toHaveBeenCalledWith(`${COLORS.brightMagenta}${message}${COLORS.reset}`)
+    expect(consoleSpy).toHaveBeenCalledWith(
+      `${COLOR_CODES.brightMagenta}${message}${COLOR_CODES.reset}`,
+    )
   })
 
   // Test for bright cyan
   test('logBrightCyan should print a message in bright cyan', () => {
     const message = 'Hello, bright cyan world!'
     nstypocolors.logBrightCyan(message)
-    expect(consoleSpy).toHaveBeenCalledWith(`${COLORS.brightCyan}${message}${COLORS.reset}`)
+    expect(consoleSpy).toHaveBeenCalledWith(
+      `${COLOR_CODES.brightCyan}${message}${COLOR_CODES.reset}`,
+    )
   })
 
   // Test for bright white
   test('logBrightWhite should print a message in bright white', () => {
     const message = 'Hello, bright white world!'
     nstypocolors.logBrightWhite(message)
-    expect(consoleSpy).toHaveBeenCalledWith(`${COLORS.brightWhite}${message}${COLORS.reset}`)
+    expect(consoleSpy).toHaveBeenCalledWith(
+      `${COLOR_CODES.brightWhite}${message}${COLOR_CODES.reset}`,
+    )
   })
 
   // Add other tests as needed
