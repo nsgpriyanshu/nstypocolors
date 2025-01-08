@@ -2,6 +2,7 @@
 import { applyColor } from './utils/color'
 import { rainbow } from './utils/rainbowColor'
 import { COLOR_CODES } from './utils/color'
+import { getUserSelectedColors } from './utils/gradientColor'
 
 // Define functions to log messages with colors
 
@@ -151,6 +152,17 @@ export function logBackPastelCoral(message: string): void {
 
 export function logBackPastelMint(message: string): void {
   console.log(applyColor(message, COLOR_CODES.backPastelMint))
+}
+
+export async function gradient(message: string): Promise<void> {
+  const userColors = await getUserSelectedColors()
+
+  const gradientMessage = message
+    .split('')
+    .map((char, index) => applyColor(char, userColors[index % userColors.length]))
+    .join('')
+
+  console.log(gradientMessage)
 }
 
 //Add a success message log statement at the end of the file
