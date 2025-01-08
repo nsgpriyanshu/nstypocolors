@@ -22,10 +22,12 @@ export function getUserSelectedColors(): Promise<string[]> {
     ]
 
     rl.question(
-      `What colors do you want for the gradient? (Enter comma-separated values or press Enter for default VIBGYOR colors):\nAvailable options: ${Object.keys(COLOR_CODES).join(', ')}\n`,
+      `\nWhat colors do you want for the gradient?\n` +
+        `Enter comma-separated values or press Enter for default VIBGYOR colors.\n` +
+        `Available options: ${Object.keys(COLOR_CODES).join(', ')}\n\n`,
       answer => {
         if (!answer.trim()) {
-          console.log('Using default colors.')
+          console.log('\nUsing default colors: VIBGYOR.')
           rl.close()
           resolve(defaultColors)
         } else {
@@ -35,10 +37,11 @@ export function getUserSelectedColors(): Promise<string[]> {
             .filter((color): color is ColorKey => color in COLOR_CODES)
 
           if (selectedColors.length === 0) {
-            console.warn('Invalid colors selected. Using default colors.')
+            console.warn('\nInvalid colors selected. Using default colors: VIBGYOR.')
             rl.close()
             resolve(defaultColors)
           } else {
+            console.log('\nUsing your selected colors.')
             rl.close()
             resolve(selectedColors.map(color => COLOR_CODES[color]))
           }
@@ -46,19 +49,4 @@ export function getUserSelectedColors(): Promise<string[]> {
       },
     )
   })
-}
-
-/**
- * Logs a message in user-selected gradient colors.
- * @param message The message to log.
- */
-export async function gradient(message: string): Promise<void> {
-  const userColors = await getUserSelectedColors()
-
-  const gradientMessage = message
-    .split('')
-    .map((char, index) => applyColor(char, userColors[index % userColors.length]))
-    .join('')
-
-  console.log(gradientMessage)
 }
