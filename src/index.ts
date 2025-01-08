@@ -1,7 +1,6 @@
 // Import necessary modules and utilities
 import { applyColor } from './utils/color'
 import { rainbow } from './utils/rainbowColor'
-import { gradientColor } from './utils/gradientColor'
 import { COLOR_CODES } from './utils/color'
 
 // Define functions to log messages with colors
@@ -157,5 +156,4 @@ export function logBackPastelMint(message: string): void {
 //Add a success message log statement at the end of the file
 if (require.main === module) {
   rainbow('nstypocolors has started successfully!')
-  gradientColor('This is a success message with a green gradient!')
 }

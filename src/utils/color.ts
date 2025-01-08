@@ -1,4 +1,3 @@
-// Define different ANSI color codes
 export const COLOR_CODES = {
   // Primary Colors
   reset: '\x1b[0m',
@@ -20,7 +19,7 @@ export const COLOR_CODES = {
   brightMagenta: '\x1b[95m',
   brightCyan: '\x1b[96m',
   brightWhite: '\x1b[97m',
-  //Pastel and Aesthetic Colors
+  // Pastel and Aesthetic Colors
   pastelRed: '\x1b[38;5;1m',
   pastelPink: '\x1b[38;5;205m',
   pastelBlue: '\x1b[38;5;111m',
@@ -30,7 +29,7 @@ export const COLOR_CODES = {
   pastelLavender: '\x1b[38;5;141m',
   pastelCoral: '\x1b[38;5;209m',
   pastelMint: '\x1b[38;5;49m',
-  //Background Colors
+  // Background Colors
   backPastelRed: '\x1b[48;5;1m',
   backPastelPink: '\x1b[48;5;205m',
   backPastelBlue: '\x1b[48;5;111m',
@@ -40,7 +39,9 @@ export const COLOR_CODES = {
   backPastelLavender: '\x1b[48;5;141m',
   backPastelCoral: '\x1b[48;5;209m',
   backPastelMint: '\x1b[48;5;49m',
-}
+} as const
+
+export type ColorKey = keyof typeof COLOR_CODES
 
 /**
  * Applies a color to a given message.
