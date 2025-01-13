@@ -2,6 +2,62 @@
 
 All notable changes to this project will be documented in this file.
 
+# [1.5.2](https://github.com/nsgpriyanshu/nstypocolors/compare/1.5.1...1.5.2) - (2025-01-13)
+
+## Bug Fixes
+
+- Gradient color ([5425dae](https://github.com/nsgpriyanshu/nstypocolors/commit/5425dae40ad6e02bfd82ac209da1eb9c48a6fc08))
+
+# [1.5.1](https://github.com/nsgpriyanshu/nstypocolors/compare/1.5.0...1.5.1) - (2025-01-08)
+
+## Bug Fixes
+
+- A bug ([b42a87b](https://github.com/nsgpriyanshu/nstypocolors/commit/b42a87b22b742fb2cc536cad29129a9125a7e608))
+
+## Non Code changes
+
+- **nstypocolors:** Release nstypocolors@1.5.1 ([7aff5f7](https://github.com/nsgpriyanshu/nstypocolors/commit/7aff5f750877eec87473006d7db2e876d131390f))
+
+# [1.5.0](https://github.com/nsgpriyanshu/nstypocolors/compare/1.4.0...1.5.0) - (2025-01-08)
+
+## Features
+
+- Add new color effects like gradients ([709ed9c](https://github.com/nsgpriyanshu/nstypocolors/commit/709ed9cbb2a1f976471be4d9d051738c417ed8bb))
+
+## Non Code changes
+
+- **nstypocolors:** Release nstypocolors@1.5.0 ([d839d76](https://github.com/nsgpriyanshu/nstypocolors/commit/d839d76037e0c6bb11ecab52e53388f385450f51))
+
+## Styling
+
+- Update the console message ([a79e4da](https://github.com/nsgpriyanshu/nstypocolors/commit/a79e4da603f22c579cd9325e799e78eaa429f191))
+
+## Testing
+
+- New features, rainbow and gradient colors ([dca021b](https://github.com/nsgpriyanshu/nstypocolors/commit/dca021b3cff8a7245512ab94019f1c74faa868d8))
+
+## Typings
+
+- Add separate folder ([4ad18f5](https://github.com/nsgpriyanshu/nstypocolors/commit/4ad18f55414f55a2ce997bcb20122adcacc109ae))
+- Add separate folder ([eea4b32](https://github.com/nsgpriyanshu/nstypocolors/commit/eea4b3218a39610f783d243a1d80605a20003b28))
+- Add separate folder ([18ec1e8](https://github.com/nsgpriyanshu/nstypocolors/commit/18ec1e81464993138bd13b86ee9afbdeb7d9d9e4))
+
+# [1.4.0](https://github.com/nsgpriyanshu/nstypocolors/tree/1.4.0) - (2024-12-08)
+
+## Continuous Integration
+
+- **update:** Remove run test ([7458ff2](https://github.com/nsgpriyanshu/nstypocolors/commit/7458ff294d6ff7958d3edf6d3fd260d08d433e11))
+- **test:** Testing a new feature ([764b481](https://github.com/nsgpriyanshu/nstypocolors/commit/764b481641f3801774fc5944ff3366e148e21d7b))
+- Update the Dependabot auto-merge action ([657c4bb](https://github.com/nsgpriyanshu/nstypocolors/commit/657c4bb7f0dd66a85638ef887a0a9929c69ffa28))
+
+## Features
+
+- Init remote repo, add cliff jumper, update deps ([9fa0b8a](https://github.com/nsgpriyanshu/nstypocolors/commit/9fa0b8a7f8c247e6cd6699ab60d6b12f22638746))
+
+## Non Code changes
+
+- **nstypocolors:** Release nstypocolors@1.4.0 ([7ba6a48](https://github.com/nsgpriyanshu/nstypocolors/commit/7ba6a486188976b57933af82ab07f1dd9923efa5))
+
 # [1.5.1](https://github.com/nsgpriyanshu/nstypocolors/compare/1.5.0...1.5.1) - (2025-01-08)
 
 ## Bug Fixes
