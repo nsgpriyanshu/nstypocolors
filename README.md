@@ -2,7 +2,7 @@
 
 # nstypocolors
 
-  <img src="./assets/nstypocoloricon.png" alt="My Colors Icon" width="250" height="250" />
+  <img src="./assets/nstypocoloricon0.jpg" alt="My Colors Icon" width="250" height="250" />
 
 [![npm version](https://img.shields.io/npm/v/nstypocolors?color=crimson&logo=npm)](https://www.npmjs.com/package/nstypocolors)
 ![Downloads](https://img.shields.io/npm/dt/nstypocolors?style=flat)
@@ -139,6 +139,28 @@ Add colorful backgrounds to your console logs:
 - **Back Pastel Mint**: Logs a message with a pastel mint background.
 
 You can use the provided functions to log messages in these colors, adding a vibrant and visually appealing touch to your console output.
+
+### Special Colors
+
+### Rainbow Gradient
+
+The `logGradient` function creates a smooth gradient that cycles through the colors of the rainbow, also known as VIBGYOR (Violet, Indigo, Blue, Green, Yellow, Orange, Red). This function is great for logging colorful messages in a playful and visually appealing way. It adds a vibrant touch to your console output.
+
+```ts
+logGradient('This is a rainbow gradient message!')
+```
+
+This function provides a delightful effect as it cycles through colors, with each character in the message displayed in a different color of the rainbow. It’s perfect for highlighting fun or attention-grabbing messages.
+
+### Success
+
+The `logSuccess` function creates a smooth gradient transitioning from blue shades to magenta, followed by a transition into pink. This gradient was inspired by the success messages seen in the Turbo repository, providing a modern and visually delightful color blend. It’s perfect for logging important success messages in a way that stands out and attracts attention.
+
+```ts
+logSuccess('This message has a pink, magenta, and blue gradient!')
+```
+
+This gradient provides a visually pleasing and smooth transition between colors, making success messages not only easy to spot but also more engaging.
 
 ## Support
 

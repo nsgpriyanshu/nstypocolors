@@ -39,6 +39,28 @@ export const COLOR_CODES = {
   backPastelLavender: '\x1b[48;5;141m',
   backPastelCoral: '\x1b[48;5;209m',
   backPastelMint: '\x1b[48;5;49m',
+
+  // Success Gradient Colors
+  // Dark blue to magenta transition
+  blue1: '\x1b[38;5;18m', // Very dark blue
+  blue2: '\x1b[38;5;19m', // Dark blue
+  blue3: '\x1b[38;5;20m', // Deep blue
+  blue4: '\x1b[38;5;21m', // Bright blue
+  blue5: '\x1b[38;5;27m', // Cyan-ish blue
+  blue6: '\x1b[38;5;33m', // Light blue
+  blue7: '\x1b[38;5;39m', // Sky blue
+  blue8: '\x1b[38;5;45m', // Bluish-magenta
+  // Transition to magenta
+  magenta1: '\x1b[38;5;91m', // Medium-dark magenta
+  magenta2: '\x1b[38;5;127m', // Medium magenta
+  magenta3: '\x1b[38;5;163m', // Bright magenta
+  magenta4: '\x1b[38;5;199m', // Lighter magenta
+  // Transition to pink
+  pink1: '\x1b[38;5;200m', // Soft pink
+  pink2: '\x1b[38;5;206m', // Light pink
+  pink3: '\x1b[38;5;212m', // Brighter pink
+  pink4: '\x1b[38;5;218m', // Vibrant pink
+  pink5: '\x1b[38;5;225m', // Very light pink
 } as const
 
 export type ColorKey = keyof typeof COLOR_CODES

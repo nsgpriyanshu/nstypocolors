@@ -4,10 +4,10 @@
 
 We actively support and maintain the following versions of `nstypocolors`:
 
-| Version  | Supported |
-| -------- | --------- |
-| 1.3.0    | ✅        |
-| < 1.2.12 | ❌        |
+| Version | Supported |
+| ------- | --------- |
+| 1.6.0   | ✅        |
+| < 1.5.0 | ❌        |
 
 Please ensure that you are using a supported version to benefit from the latest security updates and patches.
 

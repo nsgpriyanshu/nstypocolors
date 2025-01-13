@@ -35,6 +35,23 @@ export declare const COLOR_CODES: {
     readonly backPastelLavender: "\u001B[48;5;141m";
     readonly backPastelCoral: "\u001B[48;5;209m";
     readonly backPastelMint: "\u001B[48;5;49m";
+    readonly blue1: "\u001B[38;5;18m";
+    readonly blue2: "\u001B[38;5;19m";
+    readonly blue3: "\u001B[38;5;20m";
+    readonly blue4: "\u001B[38;5;21m";
+    readonly blue5: "\u001B[38;5;27m";
+    readonly blue6: "\u001B[38;5;33m";
+    readonly blue7: "\u001B[38;5;39m";
+    readonly blue8: "\u001B[38;5;45m";
+    readonly magenta1: "\u001B[38;5;91m";
+    readonly magenta2: "\u001B[38;5;127m";
+    readonly magenta3: "\u001B[38;5;163m";
+    readonly magenta4: "\u001B[38;5;199m";
+    readonly pink1: "\u001B[38;5;200m";
+    readonly pink2: "\u001B[38;5;206m";
+    readonly pink3: "\u001B[38;5;212m";
+    readonly pink4: "\u001B[38;5;218m";
+    readonly pink5: "\u001B[38;5;225m";
 };
 export type ColorKey = keyof typeof COLOR_CODES;
 /**
