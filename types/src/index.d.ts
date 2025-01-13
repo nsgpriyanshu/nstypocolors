@@ -1,3 +1,4 @@
+export { logGradient } from './utils/gradientColor';
 export declare function logRed(message: string): void;
 export declare function logGreen(message: string): void;
 export declare function logPink(message: string): void;
@@ -33,5 +34,4 @@ export declare function logBackPastelOrange(message: string): void;
 export declare function logBackPastelLavender(message: string): void;
 export declare function logBackPastelCoral(message: string): void;
 export declare function logBackPastelMint(message: string): void;
-export declare function gradient(message: string): Promise<void>;
 //# sourceMappingURL=index.d.ts.map

@@ -1,7 +1,8 @@
 // Import necessary modules and utilities
 import { applyColor } from './utils/color'
 import { COLOR_CODES } from './utils/color'
-import { getUserSelectedColors } from './utils/gradientColor'
+import { logGradient } from './utils/gradientColor'
+export { logGradient } from './utils/gradientColor'
 
 // Define functions to log messages with colors
 
@@ -153,19 +154,19 @@ export function logBackPastelMint(message: string): void {
   console.log(applyColor(message, COLOR_CODES.backPastelMint))
 }
 
-// Gradient Color
-export async function gradient(message: string): Promise<void> {
-  const userColors = await getUserSelectedColors()
+// // Gradient Color
+// export async function gradient(message: string): Promise<void> {
+//   const userColors = await getUserSelectedColors()
 
-  const gradientMessage = message
-    .split('')
-    .map((char, index) => applyColor(char, userColors[index % userColors.length]))
-    .join('')
+//   const gradientMessage = message
+//     .split('')
+//     .map((char, index) => applyColor(char, userColors[index % userColors.length]))
+//     .join('')
 
-  console.log(gradientMessage)
-}
+//   console.log(gradientMessage)
+// }
 
 //Add a success message log statement at the end of the file
 if (require.main === module) {
-  logBackPastelGreen('nstypocolors has started successfully!')
+  logGradient('nstypocolors has started successfully!')
 }
