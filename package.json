@@ -4,12 +4,27 @@
   "description": "A typescript color package specially for typescript developers.",
   "main": "dist/src/index.js",
   "types": "types/src/index.d.ts",
+  "bin": {
+    "nstc": "./dist/src/cli.js"
+  },
+  "pkg": {
+    "scripts": "dist/**/*.js",
+    "assets": [
+      "dist/**/*.js"
+    ],
+    "targets": [
+      "node18-win-x64"
+    ],
+    "outputPath": "build",
+    "output": "nstc"
+  },
   "scripts": {
     "test": "jest",
-    "clean": "rimraf dist types",
+    "clean": "rimraf dist types build",
     "format:check": "npx prettier . --check",
     "format:fix": "npx prettier . --write",
     "build": "tsc",
+    "pkg:win": "npx pkg . --compress Brotli --output build/nstc.exe",
     "start": "node dist/src/index.js",
     "cleanStart": "npm run clean && npm run build && npm run start",
     "noCleanStart": "npm run build && npm run start",
@@ -55,6 +70,7 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "jest": "^29.7.0",
+    "pkg": "^5.8.1",
     "prettier": "^3.4.2",
     "ts-jest": "^29.2.5",
     "typescript": "^5.7.2"

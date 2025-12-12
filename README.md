@@ -2,7 +2,7 @@
 
 # nstypocolors
 
-  <img src="./assets/nstypocoloricon0.jpg" alt="My Colors Icon" width="250" height="250" />
+<img src="./assets/nstc.png" alt="nstypocolors Icon" width="250" height="250" />
 
 [![npm version](https://img.shields.io/npm/v/nstypocolors?color=crimson&logo=npm)](https://www.npmjs.com/package/nstypocolors)
 ![Downloads](https://img.shields.io/npm/dt/nstypocolors?style=flat)
@@ -10,168 +10,145 @@
 [![GitHub contributors](https://img.shields.io/github/contributors/nsgpriyanshu/creatorsworld.svg?color=af52de)](https://github.com/nsgpriyanshu/creatorsworld/graphs/contributors)
 [![semantic-release: angular](https://img.shields.io/badge/semantic--release-angular-e10079?logo=semantic-release)](https://github.com/nsgpriyanshu/nstypocolors)
 [![CodeQL](https://github.com/nsgpriyanshu/nstypocolors/actions/workflows/codeql.yml/badge.svg)](https://github.com/nsgpriyanshu/nstypocolors/actions/workflows/codeql.yml)
-[![Dependency Review](https://github.com/nsgpriyanshu/nstypocolors/actions/workflows/dependency-review.yml/badge.svg)](https://github.com/nsgpriyanshu/nstypocolors/actions/workflows/dependency-review.yml)
 ![Last Commit](https://img.shields.io/github/last-commit/nsgpriyanshu/nstypocolors)
 
 </div>
 
-`nstypocolors` is a TypeScript package that provides colorful console logs for TypeScript developers. It allows you to log messages with different colors in the console, making it easier to debug and understand your logs.
+A TypeScript package providing comprehensive console logging with an extensive color palette, gradients, and built-in CLI utilities for terminal usage.
+
+---
 
 ## Features
 
-- Log messages with different colors such as red, green, yellow, blue, magenta, cyan, and white.
-- Designed specifically for TypeScript, ensuring strong type safety and compatibility.
+- Comprehensive color support: standard, bright, pastel, and background colors
+- Special gradient effects including rainbow and success animations
+- Integrated CLI tool (`nstc`) for direct terminal usage
+- Help documentation and command reference
+- Persistent default color configuration
+- Full TypeScript support with strong type safety
+
+---
 
 ## Installation
-
-You can install `nstypocolors` via npm:
 
 ```bash
 npm install nstypocolors
 ```
 
+---
+
 ## Usage
 
-To start using nstypocolors, import the desired functions into your TypeScript project
+### TypeScript/JavaScript
 
 ```ts
-import {
-  logRed,
-  logGreen,
-  logPink,
-  logYellow,
-  logBlue,
-  logMagenta,
-  logCyan,
-  logWhite,
-  logBlack,
-} from 'nstypocolors'
+import { logRed, logGreen, logBlue, logSuccess } from "nstypocolors";
+
+logRed("This is red");
+logGreen("This is green");
+logBlue("This is blue");
+logSuccess("Success message with gradient effect");
 ```
 
-Now you can use the provided functions to log colorful messages:
+---
+
+## CLI Reference
+
+The package includes a command-line interface accessible via `nstc`.
+
+### Basic Syntax
+
+```bash
+nstc "Your message" --color-flag
+```
+
+### Available Options
+
+| Flag | Description |
+|------|-------------|
+| `--red` | Red text |
+| `--green` | Green text |
+| `--blue` | Blue text |
+| `--gradient` | Rainbow gradient effect |
+| `--success` | Success gradient (default) |
+| `help` | Display help documentation |
+
+---
+
+## Help Documentation
+
+View all available commands and options:
+
+```bash
+nstc help
+```
+
+---
+
+## Example Usage
+
+### Help Menu
+
+<img src="./assets/examples/help-menu.png" alt="Help Menu Screenshot" width="600" />
+
+### Terminal Output
+
+<img src="./assets/examples/terminal-output.png" alt="Terminal Output Screenshot" width="600" />
+
+---
+
+## Default Color Configuration
+
+Set a persistent default color to avoid repeated flag entry.
+
+### Set Default
+
+```bash
+nstc set-default --green
+```
+
+### Reset Default
+
+```bash
+nstc clear-default
+```
+
+Configuration is stored in your home directory as a JSON file.
+
+---
+
+## Available Colors
+
+**Standard:** Red, Green, Pink, Yellow, Blue, Magenta, Cyan, White, Black
+
+**Bright:** Bright Red, Bright Green, Bright Yellow, Bright Blue, Bright Magenta, Bright Cyan, Bright White
+
+**Pastel:** Pastel Blue, Pastel Pink, Pastel Mint, Pastel Lavender, Pastel Coral, Pastel Yellow, Pastel Red, Pastel Green, Pastel Cyan, Pastel White
+
+**Background:** Back Pastel Blue, Back Pastel Pink, Back Pastel Red, Back Pastel Green, Back Pastel Yellow, Back Pastel Mint, Back Pastel Coral, Back Pastel Lavender
+
+---
+
+## Gradient Effects
 
 ```ts
-logRed('This is a red message')
-logGreen('This is a green message')
-logPink('This is a pink message')
-logYellow('This is a yellow message')
-logBlue('This is a blue message')
-logMagenta('This is a magenta message')
-logCyan('This is a cyan message')
-logWhite('This is a white message')
-logBlack('This is a black message')
+logGradient("Rainbow gradient text");
+logSuccess("Success gradient text");
 ```
 
-Similarly, you can use bright and pastel colors
+---
 
-```ts
-import { logBrightRed, logPastelGreen } from 'nstypocolors'
+## Community Support
 
-// Log message in bright colors
-logBrightRed('This is a bright red message!')
+For assistance or contributions, connect with the community:
 
-// Log message in pastel colors
-logPastelGreen('This is a pastel green message!')
-```
+**Discord:** [https://discord.gg/vRXgWaar2G](https://discord.gg/vRXgWaar2G)
 
-> [!TIP]
-> Consider importing only the necessary colors to streamline your code and reduce unnecessary clutter. By importing only the colors you need, you can enhance readability and maintainability, ensuring that your code remains clean and efficient.
+---
 
-## Our Colors
-
-Welcome to the vibrant world of `nstypocolors`, where your console logging can be as colorful as your imagination! This package offers a wide array of colors, ensuring that your logs are not just informative but also visually stunning. Dive into our palette and make your console logs stand out.
-
-### Standard Colors
-
-Enhance your console output with our classic colors:
-
-- **Red**: Logs a message in a bold red.
-- **Green**: Logs a message in a refreshing green.
-- **Pink**: Logs a message in a charming pink.
-- **Yellow**: Logs a message in a bright yellow.
-- **Blue**: Logs a message in a cool blue.
-- **Magenta**: Logs a message in a vibrant magenta.
-- **Cyan**: Logs a message in a soothing cyan.
-- **White**: Logs a message in a crisp white.
-- **Black**: Logs a message in a sleek black.
-
-### Bright Colors
-
-Make your messages pop with our bright color collection:
-
-- **Bright Red**: Logs a message in an eye-catching bright red.
-- **Bright Green**: Logs a message in a vivid bright green.
-- **Bright Pink**: Logs a message in an energetic bright pink.
-- **Bright Yellow**: Logs a message in a dazzling bright yellow.
-- **Bright Blue**: Logs a message in a striking bright blue.
-- **Bright Magenta**: Logs a message in an electrifying bright magenta.
-- **Bright Cyan**: Logs a message in a vibrant bright cyan.
-- **Bright White**: Logs a message in a radiant bright white.
-
-### Pastel Colors
-
-Add a soft touch to your messages with our pastel colors:
-
-- **Pastel Red**: Logs a message in a gentle pastel red.
-- **Pastel Green**: Logs a message in a calming pastel green.
-- **Pastel Yellow**: Logs a message in a mellow pastel yellow.
-- **Pastel Blue**: Logs a message in a serene pastel blue.
-- **Pastel Magenta**: Logs a message in a soothing pastel magenta.
-- **Pastel Cyan**: Logs a message in a cool pastel cyan.
-- **Pastel White**: Logs a message in a soft pastel white.
-- **Pastel Pink**: Logs a message in a sweet pastel pink.
-- **Pastel Lavender**: Logs a message in a dreamy pastel lavender.
-- **Pastel Coral**: Logs a message in a warm pastel coral.
-- **Pastel Mint**: Logs a message in a fresh pastel mint.
-
-### Background Colors
-
-Add colorful backgrounds to your console logs:
-
-- **Back Pastel Red**: Logs a message with a pastel red background.
-- **Back Pastel Pink**: Logs a message with a pastel pink background.
-- **Back Pastel Blue**: Logs a message with a pastel blue background.
-- **Back Pastel Green**: Logs a message with a pastel green background.
-- **Back Pastel Yellow**: Logs a message with a pastel yellow background.
-- **Back Pastel Orange**: Logs a message with a pastel orange background.
-- **Back Pastel Lavender**: Logs a message with a pastel lavender background.
-- **Back Pastel Coral**: Logs a message with a pastel coral background.
-- **Back Pastel Mint**: Logs a message with a pastel mint background.
-
-You can use the provided functions to log messages in these colors, adding a vibrant and visually appealing touch to your console output.
-
-### Special Colors
-
-### Rainbow Gradient
-
-The `logGradient` function creates a smooth gradient that cycles through the colors of the rainbow, also known as VIBGYOR (Violet, Indigo, Blue, Green, Yellow, Orange, Red). This function is great for logging colorful messages in a playful and visually appealing way. It adds a vibrant touch to your console output.
-
-```ts
-logGradient('This is a rainbow gradient message!')
-```
-
-This function provides a delightful effect as it cycles through colors, with each character in the message displayed in a different color of the rainbow. It’s perfect for highlighting fun or attention-grabbing messages.
-
-### Success
-
-The `logSuccess` function creates a smooth gradient transitioning from blue shades to magenta, followed by a transition into pink. This gradient was inspired by the success messages seen in the Turbo repository, providing a modern and visually delightful color blend. It’s perfect for logging important success messages in a way that stands out and attracts attention.
-
-```ts
-logSuccess('This message has a pink, magenta, and blue gradient!')
-```
-
-This gradient provides a visually pleasing and smooth transition between colors, making success messages not only easy to spot but also more engaging.
-
-## Support
-
-If you need assistance with understanding the documentation, encounter any issues, or simply require guidance, please join our [Discord server](https://discord.gg/vRXgWaar2G). Our community and support team are here to help you!
-
-## Thank You
-
-I hope this package will help you, happy coding.
-
-## Contributors
-
-<img src="https://raw.githubusercontent.com/nsgpriyanshu/creatorsworld/main/public/icons/colourfull-pfp.jpg" alt="nsgpriyanshu" width="50" height="50" style="border-radius: 50%;" />
+## Developer
+<!-- 
+<img src="https://raw.githubusercontent.com/nsgpriyanshu/creatorsworld/main/public/icons/colourfull-pfp.jpg" width="50" height="50" style="border-radius: 50%;" /> -->
 
 [![nsgpriyanshu](https://img.shields.io/badge/Developer-nsgpriyanshu-author.svg?color=f10a0a)](https://nsgpriyanshu.github.io)
+

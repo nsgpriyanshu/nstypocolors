@@ -1,12 +1,15 @@
 // Import necessary modules and utilities
-import { applyColor } from './utils/color'
-import { COLOR_CODES } from './utils/color'
+import { applyColor, COLOR_CODES } from './utils/color'
+import { logGradient } from './utils/gradientColor'
+import { logSuccess, logWarning, logError, logInfo } from './utils/gradientPresets'
+
+// Export the main utilities for use elsewhere
 export { logGradient } from './utils/gradientColor'
-export { logSuccess } from './utils/successColor'
+export { logSuccess, logWarning, logError, logInfo } from './utils/gradientPresets'
 
-// Define functions to log messages with colors
-
+// -------------------------------------------------------
 // Primary Colors
+// -------------------------------------------------------
 
 export function logRed(message: string): void {
   console.log(applyColor(message, COLOR_CODES.red))
@@ -44,7 +47,9 @@ export function logBlack(message: string): void {
   console.log(applyColor(message, COLOR_CODES.black))
 }
 
+// -------------------------------------------------------
 // Bright Colors
+// -------------------------------------------------------
 
 export function logBrightRed(message: string): void {
   console.log(applyColor(message, COLOR_CODES.brightRed))
@@ -78,7 +83,9 @@ export function logBrightWhite(message: string): void {
   console.log(applyColor(message, COLOR_CODES.brightWhite))
 }
 
-//Pastel and Aesthetic Colors
+// -------------------------------------------------------
+// Pastel and Aesthetic Colors
+// -------------------------------------------------------
 
 export function logPastelRed(message: string): void {
   console.log(applyColor(message, COLOR_CODES.pastelRed))
@@ -116,7 +123,9 @@ export function logPastelMint(message: string): void {
   console.log(applyColor(message, COLOR_CODES.pastelMint))
 }
 
+// -------------------------------------------------------
 // Background Pastel Colors
+// -------------------------------------------------------
 
 export function logBackPastelRed(message: string): void {
   console.log(applyColor(message, COLOR_CODES.backPastelRed))
@@ -154,10 +163,13 @@ export function logBackPastelMint(message: string): void {
   console.log(applyColor(message, COLOR_CODES.backPastelMint))
 }
 
-//Add a success message log statement at the end of the file
-
-import { logSuccess } from './utils/successColor'
+// -------------------------------------------------------
+// Package Start-up Log
+// -------------------------------------------------------
 
 if (require.main === module) {
   logSuccess('nstypocolors has started successfully!')
+  logInfo('Tip: Try logWarning("Be cautious!") or logError("Something went wrong!")')
+  logError('This is an error message example.')
+  logWarning('This is a warning message example.')
 }

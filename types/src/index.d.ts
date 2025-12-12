@@ -1,5 +1,5 @@
 export { logGradient } from './utils/gradientColor';
-export { logSuccess } from './utils/successColor';
+export { logSuccess, logWarning, logError, logInfo } from './utils/gradientPresets';
 export declare function logRed(message: string): void;
 export declare function logGreen(message: string): void;
 export declare function logPink(message: string): void;
