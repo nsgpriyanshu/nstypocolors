@@ -1,11 +1,7 @@
 // Import necessary modules and utilities
 import { applyColor, COLOR_CODES } from './utils/color'
-import { logGradient } from './utils/gradientColor'
+import { logRainbow } from './utils/rainbow'
 import { logSuccess, logWarning, logError, logInfo } from './utils/gradientPresets'
-
-// Export the main utilities for use elsewhere
-export { logGradient } from './utils/gradientColor'
-export { logSuccess, logWarning, logError, logInfo } from './utils/gradientPresets'
 
 // -------------------------------------------------------
 // Primary Colors
@@ -168,8 +164,28 @@ export function logBackPastelMint(message: string): void {
 // -------------------------------------------------------
 
 if (require.main === module) {
-  logSuccess('nstypocolors has started successfully!')
-  logInfo('Tip: Try logWarning("Be cautious!") or logError("Something went wrong!")')
-  logError('This is an error message example.')
-  logWarning('This is a warning message example.')
+  logRainbow('VIBGIOUR')
+
+  logSuccess('Hi')
+  logError('Oops!')
+  logInfo('Info')
+  logWarning('Warn')
+
+  // Small sentences (3-4 chars)
+  logSuccess('Go')
+  logError('Bad')
+  logInfo('Tip')
+  logWarning('Hot')
+
+  // Medium sentences (10-15 chars)
+  logSuccess('Victory Achieved')
+  logError('Failed Attempt')
+  logInfo('System Notice')
+  logWarning('Caution Alert')
+
+  // Large sentences (30-50 chars)
+  logSuccess('Congratulations on Your Great Achievement!')
+  logError('Critical system failure! Immediate action required!')
+  logInfo('Information: Your session will expire in 10 minutes')
+  logWarning('Warning: Unauthorized access attempt detected!')
 }

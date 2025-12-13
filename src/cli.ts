@@ -35,14 +35,11 @@ import {
   logBackPastelLavender,
   logBackPastelCoral,
   logBackPastelMint,
-  logGradient,
-  logSuccess,
-  logWarning,
-  logError,
-  logInfo,
 } from './index'
+import { logError, logInfo, logSuccess, logWarning } from './utils/gradientPresets'
 import { showHelpMenu } from './utils/helpMenu'
 import { argv } from 'process'
+import { logRainbow } from './utils/rainbow'
 
 // Parse CLI arguments
 const args = argv.slice(2)
@@ -226,7 +223,7 @@ switch (finalOption) {
 
   // Default gradient
   case '--gradient':
-    logGradient(finalMessage)
+    logRainbow(finalMessage)
     break
 
   default:

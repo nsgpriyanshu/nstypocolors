@@ -42,12 +42,12 @@ npm install nstypocolors
 ### TypeScript/JavaScript
 
 ```ts
-import { logRed, logGreen, logBlue, logSuccess } from "nstypocolors";
+import { logRed, logGreen, logBlue, logSuccess } from 'nstypocolors'
 
-logRed("This is red");
-logGreen("This is green");
-logBlue("This is blue");
-logSuccess("Success message with gradient effect");
+logRed('This is red')
+logGreen('This is green')
+logBlue('This is blue')
+logSuccess('Success message with gradient effect')
 ```
 
 ---
@@ -64,14 +64,14 @@ nstc "Your message" --color-flag
 
 ### Available Options
 
-| Flag | Description |
-|------|-------------|
-| `--red` | Red text |
-| `--green` | Green text |
-| `--blue` | Blue text |
-| `--gradient` | Rainbow gradient effect |
-| `--success` | Success gradient (default) |
-| `help` | Display help documentation |
+| Flag         | Description                |
+| ------------ | -------------------------- |
+| `--red`      | Red text                   |
+| `--green`    | Green text                 |
+| `--blue`     | Blue text                  |
+| `--gradient` | Rainbow gradient effect    |
+| `--success`  | Success gradient (default) |
+| `help`       | Display help documentation |
 
 ---
 
@@ -132,8 +132,8 @@ Configuration is stored in your home directory as a JSON file.
 ## Gradient Effects
 
 ```ts
-logGradient("Rainbow gradient text");
-logSuccess("Success gradient text");
+logGradient('Rainbow gradient text')
+logSuccess('Success gradient text')
 ```
 
 ---
@@ -147,8 +147,8 @@ For assistance or contributions, connect with the community:
 ---
 
 ## Developer
-<!-- 
+
+<!--
 <img src="https://raw.githubusercontent.com/nsgpriyanshu/creatorsworld/main/public/icons/colourfull-pfp.jpg" width="50" height="50" style="border-radius: 50%;" /> -->
 
 [![nsgpriyanshu](https://img.shields.io/badge/Developer-nsgpriyanshu-author.svg?color=f10a0a)](https://nsgpriyanshu.github.io)
-

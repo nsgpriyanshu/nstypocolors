@@ -13,7 +13,7 @@ Examples:
   nstc "Success!" --success
   nstc "Warning!" --warn
   nstc "Error occurred!" --error
-  nstc "Smooth gradient text" --gradient
+  nstc "Rainbow Message" --rainbow
 
 ---------------------------------------------
 Available Color Options:

@@ -1,68 +1,52 @@
-import { applyColor, COLOR_CODES } from './color'
+import { applyColor } from './color'
 
 /**
- * Cycles through a color array and applies colors to each character.
+ * Apply a multi-step gradient across a message
+ * Only uses colors from the palette—no numeric interpolation
  */
-function gradientify(message: string, colors: string[]): string {
+function multiStepGradient(message: string, palette: number[]): string {
+  const length = message.length
+  if (length === 0) return ''
+
   return message
     .split('')
-    .map((char, i) => applyColor(char, colors[i % colors.length]))
+    .map((char, i) => {
+      const t = i / (length - 1) // 0 → 1 across the message
+      const idx = Math.floor(t * (palette.length - 1))
+      const colorCode = palette[idx]
+      return applyColor(char, `\x1b[38;5;${colorCode}m`)
+    })
     .join('')
 }
 
 /**
- * Success — Blue → Magenta → Pink
+ * Success — Purple → Pink
  */
 export function logSuccess(message: string): void {
-  const colors = [
-    COLOR_CODES.blue3,
-    COLOR_CODES.blue5,
-    COLOR_CODES.blue7,
-    COLOR_CODES.magenta2,
-    COLOR_CODES.magenta3,
-    COLOR_CODES.pink2,
-    COLOR_CODES.pink4,
-  ]
-  console.log('\n' + gradientify(message, colors))
+  const palette = [127, 163, 199, 200, 206, 212, 218, 225] // no blues, just purple → pink
+  console.log('\n' + multiStepGradient(message, palette))
 }
 
 /**
- * Warning — Yellow → Orange → Red
- */
-export function logWarning(message: string): void {
-  const colors = [
-    COLOR_CODES.pastelYellow,
-    COLOR_CODES.brightYellow,
-    COLOR_CODES.pastelOrange,
-    COLOR_CODES.red,
-    COLOR_CODES.brightRed,
-  ]
-  console.log('\n' + gradientify(message, colors))
-}
-
-/**
- * Error — Red → Magenta
+ * Error — Red → Orange
  */
 export function logError(message: string): void {
-  const colors = [
-    COLOR_CODES.red,
-    COLOR_CODES.brightRed,
-    COLOR_CODES.magenta1,
-    COLOR_CODES.magenta3,
-  ]
-  console.log('\n' + gradientify(message, colors))
+  const palette = [196, 160, 202, 208, 214] // red → orange
+  console.log('\n' + multiStepGradient(message, palette))
 }
 
 /**
- * Info — Cyan → Blue → White
+ * Info — Blue → Cyan
  */
 export function logInfo(message: string): void {
-  const colors = [
-    COLOR_CODES.cyan,
-    COLOR_CODES.brightCyan,
-    COLOR_CODES.blue5,
-    COLOR_CODES.brightBlue,
-    COLOR_CODES.white,
-  ]
-  console.log('\n' + gradientify(message, colors))
+  const palette = [20, 33, 39, 45, 51] // clean blue → cyan
+  console.log('\n' + multiStepGradient(message, palette))
+}
+
+/**
+ * Warning — Yellow → Orange
+ */
+export function logWarning(message: string): void {
+  const palette = [229, 220, 208] // yellow → gold → orange
+  console.log('\n' + multiStepGradient(message, palette))
 }

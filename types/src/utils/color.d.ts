@@ -43,15 +43,21 @@ export declare const COLOR_CODES: {
     readonly blue6: "\u001B[38;5;33m";
     readonly blue7: "\u001B[38;5;39m";
     readonly blue8: "\u001B[38;5;45m";
+    readonly blue9: "\u001B[38;5;51m";
     readonly magenta1: "\u001B[38;5;91m";
-    readonly magenta2: "\u001B[38;5;127m";
-    readonly magenta3: "\u001B[38;5;163m";
-    readonly magenta4: "\u001B[38;5;199m";
+    readonly magenta2: "\u001B[38;5;95m";
+    readonly magenta3: "\u001B[38;5;127m";
+    readonly magenta4: "\u001B[38;5;135m";
+    readonly magenta5: "\u001B[38;5;163m";
+    readonly magenta6: "\u001B[38;5;175m";
+    readonly magenta7: "\u001B[38;5;199m";
     readonly pink1: "\u001B[38;5;200m";
-    readonly pink2: "\u001B[38;5;206m";
-    readonly pink3: "\u001B[38;5;212m";
-    readonly pink4: "\u001B[38;5;218m";
-    readonly pink5: "\u001B[38;5;225m";
+    readonly pink2: "\u001B[38;5;202m";
+    readonly pink3: "\u001B[38;5;206m";
+    readonly pink4: "\u001B[38;5;210m";
+    readonly pink5: "\u001B[38;5;212m";
+    readonly pink6: "\u001B[38;5;218m";
+    readonly pink7: "\u001B[38;5;225m";
 };
 export type ColorKey = keyof typeof COLOR_CODES;
 /**
