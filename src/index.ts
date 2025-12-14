@@ -159,6 +159,9 @@ export function logBackPastelMint(message: string): void {
   console.log(applyColor(message, COLOR_CODES.backPastelMint))
 }
 
+export { logRainbow } from './utils/rainbow'
+export { logSuccess, logWarning, logError, logInfo, logDefault } from './utils/gradientPresets'
+
 // -------------------------------------------------------
 // Package Start-up Log
 // -------------------------------------------------------
