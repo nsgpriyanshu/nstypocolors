@@ -1,7 +1,7 @@
 // Import necessary modules and utilities
 import { applyColor, COLOR_CODES } from './utils/color'
 import { logRainbow } from './utils/rainbow'
-import { logSuccess, logWarning, logError, logInfo } from './utils/gradientPresets'
+import { logSuccess, logWarning, logError, logInfo, logDefault } from './utils/gradientPresets'
 
 // -------------------------------------------------------
 // Primary Colors
@@ -165,7 +165,11 @@ export function logBackPastelMint(message: string): void {
 
 if (require.main === module) {
   logRainbow('VIBGIOUR')
+  logDefault('nstypocolors initialized successfully!')
 
+  // Test various gradient presets with different message lengths
+
+  // Single word messages
   logSuccess('Hi')
   logError('Oops!')
   logInfo('Info')

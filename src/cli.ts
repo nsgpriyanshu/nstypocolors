@@ -36,7 +36,7 @@ import {
   logBackPastelCoral,
   logBackPastelMint,
 } from './index'
-import { logError, logInfo, logSuccess, logWarning } from './utils/gradientPresets'
+import { logError, logInfo, logSuccess, logWarning, logDefault } from './utils/gradientPresets'
 import { showHelpMenu } from './utils/helpMenu'
 import { argv } from 'process'
 import { logRainbow } from './utils/rainbow'
@@ -53,7 +53,7 @@ if (message === 'help' || message === '--help' || option === '--help') {
 
 // Default message & option if nothing provided
 const finalMessage = message || 'nstypocolors CLI running successfully!'
-const finalOption = option || '--success'
+const finalOption = option || '--default'
 
 // ------------------------------------------------------
 //  MAIN COLOR SWITCH
@@ -221,12 +221,12 @@ switch (finalOption) {
     logInfo(finalMessage)
     break
 
-  // Default gradient
-  case '--gradient':
+  case '--rainbow':
     logRainbow(finalMessage)
     break
 
+  // Default rainbow
   default:
-    logSuccess(finalMessage)
+    logDefault(finalMessage)
     break
 }

@@ -20,6 +20,21 @@ function multiStepGradient(message: string, palette: number[]): string {
 }
 
 /**
+ * Default — Red → White
+ */
+export function logDefault(message: string): void {
+  const palette = [
+    196, // bright red
+    203, // soft red
+    210, // light red / salmon
+    217, // pale pink
+    224, // very light pink
+    231, // white
+  ]
+  console.log('\n' + multiStepGradient(message, palette))
+}
+
+/**
  * Success — Purple → Pink
  */
 export function logSuccess(message: string): void {

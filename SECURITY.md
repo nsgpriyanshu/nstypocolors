@@ -20,7 +20,6 @@ If you discover a security vulnerability in `nstypocolors`, please report it to 
 1. Contact us directly via our **Discord** [Server](https://discord.gg/eG34B6JVtM) and contact an admin. With the subject line "Security Vulnerability Report".
 
 2. **Details**: Provide as much detail as possible about the vulnerability. This includes:
-
    - A description of the vulnerability
    - Steps to reproduce the issue
    - Any potential impact or exploitation

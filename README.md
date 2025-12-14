@@ -97,25 +97,26 @@ nstc help
 
 ---
 
-## Default Color Configuration
-
-Set a persistent default color to avoid repeated flag entry.
-
-### Set Default
-
-```bash
-nstc set-default --green
-```
-
-### Reset Default
-
-```bash
-nstc clear-default
-```
-
-Configuration is stored in your home directory as a JSON file.
-
----
+> [!NOTE]
+> **Coming Soon — Default Color Configuration**
+>
+> Set a persistent default color to avoid repeatedly passing color flags in every command.
+>
+> ### Planned Usage
+>
+> ```bash
+> nstc set-default --green
+> ```
+>
+> ### Reset Default
+>
+> ```bash
+> nstc clear-default
+> ```
+>
+> The default configuration will be stored locally in your home directory as a JSON file and applied automatically when no color flag is provided.
+>
+> _This feature is under development and will be available in an upcoming release._
 
 ## Available Colors
 
