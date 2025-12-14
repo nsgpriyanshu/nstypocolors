@@ -1,11 +1,11 @@
 {
   "name": "nstypocolors",
-  "version": "2.0.0-beta-1",
-  "description": "A typescript color package specially for typescript developers.",
+  "version": "2.0.0",
+  "description": "A TypeScript color package specially for TypeScript developers.",
   "main": "dist/src/index.js",
   "types": "types/src/index.d.ts",
   "bin": {
-    "nstc": "./dist/src/cli.js"
+    "nstc": "dist/src/cli.js"
   },
   "pkg": {
     "scripts": "dist/**/*.js",
@@ -21,10 +21,10 @@
   "scripts": {
     "test": "jest",
     "clean": "rimraf dist types build",
-    "format:check": "npx prettier . --check",
-    "format:fix": "npx prettier . --write",
+    "format:check": "prettier . --check",
+    "format:fix": "prettier . --write",
     "build": "tsc",
-    "pkg:win": "npx pkg . --compress Brotli --output build/nstc.exe",
+    "pkg:win": "pkg . --compress Brotli --output build/nstc.exe",
     "start": "node dist/src/index.js",
     "cleanStart": "npm run clean && npm run build && npm run start",
     "noCleanStart": "npm run build && npm run start",
@@ -44,7 +44,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nsgpriyanshu/nstypocolors"
+    "url": "git+https://github.com/nsgpriyanshu/nstypocolors.git"
   },
   "bugs": {
     "url": "https://github.com/nsgpriyanshu/nstypocolors/issues"
@@ -53,7 +53,7 @@
   "files": [
     "dist/",
     "types/",
-    "assets",
+    "assets/",
     "README.md",
     "LICENSE"
   ],
