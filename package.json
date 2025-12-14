@@ -1,6 +1,6 @@
 {
   "name": "nstypocolors",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A TypeScript color package specially for TypeScript developers.",
   "main": "dist/src/index.js",
   "types": "types/src/index.d.ts",
