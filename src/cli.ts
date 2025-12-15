@@ -36,7 +36,14 @@ import {
   logBackPastelCoral,
   logBackPastelMint,
 } from './index'
-import { logError, logInfo, logSuccess, logWarning, logDefault } from './utils/gradientPresets'
+import {
+  logError,
+  logInfo,
+  logBuild,
+  logDefault,
+  logWarn,
+  logSuccess,
+} from './utils/gradientPresets'
 import { showHelpMenu } from './utils/helpMenu'
 import { argv } from 'process'
 import { logRainbow } from './utils/rainbow'
@@ -204,13 +211,16 @@ switch (finalOption) {
     break
 
   // Gradient Presets
+  case '--build':
+    logBuild(finalMessage)
+    break
+
   case '--success':
     logSuccess(finalMessage)
     break
 
   case '--warn':
-  case '--warning':
-    logWarning(finalMessage)
+    logWarn(finalMessage)
     break
 
   case '--error':

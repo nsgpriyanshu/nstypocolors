@@ -1,7 +1,14 @@
 // Import necessary modules and utilities
 import { applyColor, COLOR_CODES } from './utils/color'
 import { logRainbow } from './utils/rainbow'
-import { logSuccess, logWarning, logError, logInfo, logDefault } from './utils/gradientPresets'
+import {
+  logWarn,
+  logError,
+  logInfo,
+  logDefault,
+  logBuild,
+  logSuccess,
+} from './utils/gradientPresets'
 
 // -------------------------------------------------------
 // Primary Colors
@@ -160,7 +167,7 @@ export function logBackPastelMint(message: string): void {
 }
 
 export { logRainbow } from './utils/rainbow'
-export { logSuccess, logWarning, logError, logInfo, logDefault } from './utils/gradientPresets'
+export { logWarn, logError, logInfo, logDefault } from './utils/gradientPresets'
 
 // -------------------------------------------------------
 // Package Start-up Log
@@ -173,26 +180,30 @@ if (require.main === module) {
   // Test various gradient presets with different message lengths
 
   // Single word messages
-  logSuccess('Hi')
+  logSuccess('Done')
+  logBuild('Hi')
   logError('Oops!')
   logInfo('Info')
-  logWarning('Warn')
+  logWarn('Warn')
 
-  // Small sentences (3-4 chars)
-  logSuccess('Go')
+  // Small sentences (3–4 chars)
+  logSuccess('OK')
+  logBuild('Go')
   logError('Bad')
   logInfo('Tip')
-  logWarning('Hot')
+  logWarn('Hot')
 
-  // Medium sentences (10-15 chars)
-  logSuccess('Victory Achieved')
+  // Medium sentences (10–15 chars)
+  logSuccess('Build Passed')
+  logBuild('Victory Achieved')
   logError('Failed Attempt')
   logInfo('System Notice')
-  logWarning('Caution Alert')
+  logWarn('Caution Alert')
 
-  // Large sentences (30-50 chars)
-  logSuccess('Congratulations on Your Great Achievement!')
+  // Large sentences (30–50 chars)
+  logSuccess('Operation completed successfully without any issues!')
+  logBuild('Congratulations on Your Great Achievement!')
   logError('Critical system failure! Immediate action required!')
   logInfo('Information: Your session will expire in 10 minutes')
-  logWarning('Warning: Unauthorized access attempt detected!')
+  logWarn('Warning: Unauthorized access attempt detected!')
 }

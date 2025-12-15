@@ -24,9 +24,15 @@ export function logDefault(message: string): void {
   console.log(multiStepGradient(message, palette))
 }
 
-/** Success — Purple → Pink */
-export function logSuccess(message: string): void {
+/** Build — Purple → Pink */
+export function logBuild(message: string): void {
   const palette = [127, 163, 199, 200, 206, 212, 218, 225]
+  console.log(multiStepGradient(message, palette))
+}
+
+/** Success — Green → Mint → Soft Cyan */
+export function logSuccess(message: string): void {
+  const palette = [34, 40, 46, 49, 51, 159]
   console.log(multiStepGradient(message, palette))
 }
 
@@ -43,7 +49,7 @@ export function logInfo(message: string): void {
 }
 
 /** Warning — Yellow → Orange */
-export function logWarning(message: string): void {
+export function logWarn(message: string): void {
   const palette = [229, 220, 208]
   console.log(multiStepGradient(message, palette))
 }

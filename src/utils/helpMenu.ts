@@ -11,7 +11,8 @@ Usage:
 Examples:
   nstc "Hello World" --red
   nstc "Success!" --success
-  nstc "Warning!" --warn
+  nstc "Background!" --back-pastel-blue
+  nstc "Pastel Text" --pastel-green
   nstc "Error occurred!" --error
   nstc "Rainbow Message" --rainbow
 
@@ -63,10 +64,11 @@ BACKGROUND PASTELS:
 
 GRADIENT PRESETS:
   --gradient          Default rainbow gradient
-  --success           Blue → Magenta → Pink gradient
-  --warn / --warning  Yellow / Orange gradient
+  --success           Success — Green → Mint → Soft Cyan
+  --warn              Yellow / Orange gradient
   --error             Red intense gradient
   --info              Cyan / Blue gradient
+  --build             Blue → Magenta → Pink gradient
 
 ---------------------------------------------
 Help:

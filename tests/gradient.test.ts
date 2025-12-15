@@ -1,4 +1,11 @@
-import { logSuccess, logError, logInfo, logWarning, logDefault } from '../src/utils/gradientPresets'
+import {
+  logSuccess,
+  logError,
+  logInfo,
+  logWarn,
+  logDefault,
+  logBuild,
+} from '../src/utils/gradientPresets'
 
 describe('Gradient color logging', () => {
   let consoleSpy: jest.SpyInstance
@@ -11,7 +18,7 @@ describe('Gradient color logging', () => {
     consoleSpy.mockRestore()
   })
 
-  test('logSuccess uses only purple → pink colors', () => {
+  test('logSuccess uses green blended gradient', () => {
     logSuccess('Success')
 
     const output = consoleSpy.mock.calls[0][0] as string
@@ -19,8 +26,20 @@ describe('Gradient color logging', () => {
     // Must contain ANSI escape
     expect(output).toMatch(/\x1b\[38;5;\d+m/)
 
-    // Should NOT contain green or yellow ranges
-    expect(output).not.toMatch(/\x1b\[38;5;(46|82|118|154|190)m/)
+    // Should contain green-ish tones
+    expect(output).toMatch(/\x1b\[38;5;(46|82|118|154|190)m/)
+  })
+
+  test('logBuild uses purple-only gradient', () => {
+    logBuild('Build')
+
+    const output = consoleSpy.mock.calls[0][0] as string
+
+    // Purple / magenta ANSI range
+    expect(output).toMatch(/\x1b\[38;5;(127|163|199|200|206|212|218|225)m/)
+
+    // Should NOT contain green or yellow
+    expect(output).not.toMatch(/\x1b\[38;5;(46|82|118|154|190|229|220)m/)
   })
 
   test('logError uses red → orange colors only', () => {
@@ -44,8 +63,8 @@ describe('Gradient color logging', () => {
     expect(output).not.toMatch(/\x1b\[38;5;(196|208|229)m/)
   })
 
-  test('logWarning uses yellow → orange colors only', () => {
-    logWarning('Warn')
+  test('logWarn uses yellow → orange colors only', () => {
+    logWarn('Warn')
 
     const output = consoleSpy.mock.calls[0][0] as string
 
@@ -62,10 +81,11 @@ describe('Gradient color logging', () => {
   })
 
   test('gradients work for very small words', () => {
+    expect(() => logBuild('Hey')).not.toThrow()
     expect(() => logSuccess('OK')).not.toThrow()
     expect(() => logError('No')).not.toThrow()
     expect(() => logInfo('Hi')).not.toThrow()
-    expect(() => logWarning('!')).not.toThrow()
+    expect(() => logWarn('!')).not.toThrow()
   })
 
   test('gradient covers entire message length', () => {

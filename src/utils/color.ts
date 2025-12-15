@@ -39,36 +39,6 @@ export const COLOR_CODES = {
   backPastelLavender: '\x1b[48;5;141m',
   backPastelCoral: '\x1b[48;5;209m',
   backPastelMint: '\x1b[48;5;49m',
-
-  // Success Gradient Colors
-  // Dark blue → Bluish-purple
-  blue1: '\x1b[38;5;18m',
-  blue2: '\x1b[38;5;19m',
-  blue3: '\x1b[38;5;20m',
-  blue4: '\x1b[38;5;21m',
-  blue5: '\x1b[38;5;27m',
-  blue6: '\x1b[38;5;33m',
-  blue7: '\x1b[38;5;39m',
-  blue8: '\x1b[38;5;45m',
-  blue9: '\x1b[38;5;51m', // extra step
-
-  // Transition to magenta/purple
-  magenta1: '\x1b[38;5;91m',
-  magenta2: '\x1b[38;5;95m', // added
-  magenta3: '\x1b[38;5;127m',
-  magenta4: '\x1b[38;5;135m', // added
-  magenta5: '\x1b[38;5;163m',
-  magenta6: '\x1b[38;5;175m', // added
-  magenta7: '\x1b[38;5;199m',
-
-  // Transition to pink
-  pink1: '\x1b[38;5;200m',
-  pink2: '\x1b[38;5;202m', // added
-  pink3: '\x1b[38;5;206m',
-  pink4: '\x1b[38;5;210m', // added
-  pink5: '\x1b[38;5;212m',
-  pink6: '\x1b[38;5;218m',
-  pink7: '\x1b[38;5;225m',
 } as const
 
 export type ColorKey = keyof typeof COLOR_CODES
