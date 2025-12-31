@@ -167,7 +167,14 @@ export function logBackPastelMint(message: string): void {
 }
 
 export { logRainbow } from './utils/rainbow'
-export { logWarn, logError, logInfo, logDefault } from './utils/gradientPresets'
+export {
+  logWarn,
+  logError,
+  logInfo,
+  logDefault,
+  logSuccess,
+  logBuild,
+} from './utils/gradientPresets'
 
 // -------------------------------------------------------
 // Package Start-up Log

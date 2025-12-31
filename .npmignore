@@ -1,6 +1,7 @@
 #Ignoring Files
 src/
 tests/
+assets/
 node_modules/
 *.log
 *.map

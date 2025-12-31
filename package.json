@@ -1,7 +1,7 @@
 {
   "name": "nstypocolors",
-  "version": "2.0.3",
-  "description": "A TypeScript color package specially for TypeScript developers.",
+  "version": "2.0.4",
+  "description": "Minimal color and gradient logging utilities for modern TypeScript projects.",
   "main": "dist/src/index.js",
   "types": "types/src/index.d.ts",
   "bin": {
@@ -53,14 +53,11 @@
   "files": [
     "dist/",
     "types/",
-    "assets/",
     "README.md",
     "LICENSE"
   ],
   "devDependencies": {
-    "@commitlint/cli": "^20.2.0",
     "@commitlint/config-angular": "^20.2.0",
-    "@commitlint/config-conventional": "^20.2.0",
     "@favware/cliff-jumper": "^3.0.3",
     "@types/jest": "^29.5.14",
     "@types/node": "^22.10.2",

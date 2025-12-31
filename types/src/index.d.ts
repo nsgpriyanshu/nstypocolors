@@ -34,5 +34,5 @@ export declare function logBackPastelLavender(message: string): void;
 export declare function logBackPastelCoral(message: string): void;
 export declare function logBackPastelMint(message: string): void;
 export { logRainbow } from './utils/rainbow';
-export { logWarn, logError, logInfo, logDefault } from './utils/gradientPresets';
+export { logWarn, logError, logInfo, logDefault, logSuccess, logBuild, } from './utils/gradientPresets';
 //# sourceMappingURL=index.d.ts.map
