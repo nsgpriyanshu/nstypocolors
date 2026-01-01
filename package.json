@@ -44,7 +44,7 @@
   ],
   "devDependencies": {
     "@commitlint/cli": "^19.6.1",
-    "@commitlint/config-angular": "^19.6.0",
+    "@commitlint/config-angular": "^20.2.0",
     "@commitlint/config-conventional": "^19.6.0",
     "@favware/cliff-jumper": "^5.0.0",
     "@types/jest": "^29.5.14",
