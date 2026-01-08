@@ -14,7 +14,7 @@
 
 </div>
 
-A TypeScript package providing comprehensive console logging with an extensive color palette, gradients, and built-in CLI utilities for terminal usage.
+Minimal color and gradient logging utilities for modern TypeScript projects.
 
 ---
 
