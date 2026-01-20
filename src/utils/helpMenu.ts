@@ -17,6 +17,22 @@ Examples:
   nstc "Rainbow Message" --rainbow
 
 ---------------------------------------------
+DEFAULT COLOR CONFIGURATION:
+
+  nstc setdefault <color-option>
+    Set a persistent default color
+    Example: nstc setdefault --build
+
+  nstc getdefault
+    Display the current default color
+
+  nstc cleardefault
+    Clear the default color
+
+  NOTE: When a default is set, it will be used automatically when you don't
+        specify a color option. You can still override it with a color flag.
+
+---------------------------------------------
 Available Color Options:
 
 PRIMARY COLORS:

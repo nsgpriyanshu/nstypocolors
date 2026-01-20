@@ -85,6 +85,66 @@ nstc help
 
 ---
 
+## Default Color Configuration
+
+Set a persistent default color to avoid repeatedly specifying color flags. The default color is stored locally in your home directory and applies automatically when no color option is provided.
+
+### Commands
+
+#### Set Default Color
+
+```bash
+nstc setdefault <color-option>
+```
+
+Set a default color that will be used for all messages when no color flag is provided.
+
+**Examples:**
+
+```bash
+nstc setdefault --build
+nstc setdefault --green
+nstc setdefault --pastel-blue
+nstc setdefault --success
+```
+You can replace `<color-option>` with any valid color flag supported by `nstc`.
+
+#### Get Current Default
+
+```bash
+nstc getdefault
+```
+
+Display the currently configured default color.
+
+#### Clear Default
+
+```bash
+nstc cleardefault
+```
+
+Remove the default color configuration.
+
+### Usage
+
+Once a default is set, simply run:
+
+```bash
+nstc "Your message"
+```
+
+The message will automatically use your configured default color. You can still override it by specifying a color flag:
+
+```bash
+nstc "Your message" --red
+```
+
+### Storage
+
+The configuration is stored as a JSON file in your home directory (`~/.nstc-config.json`) and persists across terminal sessions.
+
+---
+
 ## Example Usage
 
 ### Help Menu
@@ -96,27 +156,6 @@ nstc help
 <img src="./assets/examples/terminal-output.png" alt="Terminal Output Screenshot" width="600" />
 
 ---
-
-> [!NOTE]
-> **Coming Soon — Default Color Configuration**
->
-> Set a persistent default color to avoid repeatedly passing color flags in every command.
->
-> ### Planned Usage
->
-> ```bash
-> nstc set-default --green
-> ```
->
-> ### Reset Default
->
-> ```bash
-> nstc clear-default
-> ```
->
-> The default configuration will be stored locally in your home directory as a JSON file and applied automatically when no color flag is provided.
->
-> _This feature is under development and will be available in an upcoming release._
 
 ## Available Colors
 

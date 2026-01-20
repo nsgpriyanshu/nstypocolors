@@ -47,6 +47,7 @@ import {
 import { showHelpMenu } from './utils/helpMenu'
 import { argv } from 'process'
 import { logRainbow } from './utils/rainbow'
+import { setDefaultColor, getDefaultColor, clearDefaultColor } from './utils/config'
 
 // Parse CLI arguments
 const args = argv.slice(2)
@@ -58,9 +59,47 @@ if (message === 'help' || message === '--help' || option === '--help') {
   process.exit(0)
 }
 
+// Handle setdefault command
+if (message === 'setdefault') {
+  if (option) {
+    setDefaultColor(option)
+    logSuccess(`✓ Default color set to: ${option}`)
+  } else {
+    console.log('Usage: nstc setdefault <color-option>')
+    console.log('Example: nstc setdefault --build')
+  }
+  process.exit(0)
+}
+
+// Handle cleardefault command
+if (message === 'cleardefault') {
+  clearDefaultColor()
+  logSuccess('✓ Default color cleared')
+  process.exit(0)
+}
+
+// Handle getdefault command
+if (message === 'getdefault') {
+  const defaultColor = getDefaultColor()
+  if (defaultColor) {
+    console.log(`Current default color: ${defaultColor}`)
+  } else {
+    console.log('No default color set')
+  }
+  process.exit(0)
+}
+
 // Default message & option if nothing provided
-const finalMessage = message || 'nstypocolors CLI running successfully!'
-const finalOption = option || '--default'
+const finalMessage = message || 'nstypocolors CLI installed successfully!'
+let finalOption = option || '--default'
+
+// Use saved default color if no option provided and default is set
+if (!option && message && !message.startsWith('--')) {
+  const savedDefault = getDefaultColor()
+  if (savedDefault) {
+    finalOption = savedDefault
+  }
+}
 
 // ------------------------------------------------------
 //  MAIN COLOR SWITCH
