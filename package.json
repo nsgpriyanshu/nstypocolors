@@ -1,6 +1,6 @@
 {
   "name": "nstypocolors",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Minimal color and gradient logging utilities for modern TypeScript projects.",
   "main": "dist/src/index.js",
   "types": "types/src/index.d.ts",
