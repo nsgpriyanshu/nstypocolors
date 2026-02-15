@@ -107,6 +107,7 @@ nstc setdefault --green
 nstc setdefault --pastel-blue
 nstc setdefault --success
 ```
+
 You can replace `<color-option>` with any valid color flag supported by `nstc`.
 
 #### Get Current Default
