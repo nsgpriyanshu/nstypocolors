@@ -1,3 +1,4 @@
+import { describe, beforeEach, afterEach, test, expect, vi, type MockInstance } from 'vitest'
 import {
   logSuccess,
   logError,
@@ -8,10 +9,10 @@ import {
 } from '../src/utils/gradientPresets'
 
 describe('Gradient color logging', () => {
-  let consoleSpy: jest.SpyInstance
+  let consoleSpy: MockInstance
 
   beforeEach(() => {
-    consoleSpy = jest.spyOn(console, 'log').mockImplementation(() => {})
+    consoleSpy = vi.spyOn(console, 'log').mockImplementation(() => {})
   })
 
   afterEach(() => {

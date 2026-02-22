@@ -11,7 +11,7 @@
     "declaration": true,
     "declarationDir": "types",
     "declarationMap": true,
-    "types": ["node", "jest"]
+    "types": ["node", "vitest/globals"]
   },
   "include": ["src", "tests"],
   "exclude": ["node_modules", "dist"],

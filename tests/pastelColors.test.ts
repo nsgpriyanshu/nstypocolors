@@ -1,11 +1,12 @@
+import { describe, beforeEach, afterEach, test, expect, vi, type MockInstance } from 'vitest'
 import * as nstypocolors from '../src/index'
 import { COLOR_CODES } from '../src/utils/color'
 
 describe('nstypocolors pastel logging functions', () => {
-  let consoleSpy: jest.SpyInstance
+  let consoleSpy: MockInstance
 
   beforeEach(() => {
-    consoleSpy = jest.spyOn(console, 'log').mockImplementation(() => {})
+    consoleSpy = vi.spyOn(console, 'log').mockImplementation(() => {})
   })
 
   afterEach(() => {

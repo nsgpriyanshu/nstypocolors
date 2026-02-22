@@ -11,6 +11,7 @@
 [![semantic-release: angular](https://img.shields.io/badge/semantic--release-angular-e10079?logo=semantic-release)](https://github.com/nsgpriyanshu/nstypocolors)
 [![CodeQL](https://github.com/nsgpriyanshu/nstypocolors/actions/workflows/codeql.yml/badge.svg)](https://github.com/nsgpriyanshu/nstypocolors/actions/workflows/codeql.yml)
 ![Last Commit](https://img.shields.io/github/last-commit/nsgpriyanshu/nstypocolors)
+[![Vitest](https://img.shields.io/badge/test-Vitest-%23FCC72B?logo=vitest&color=729B1B)](https://vitest.dev/)
 
 </div>
 
